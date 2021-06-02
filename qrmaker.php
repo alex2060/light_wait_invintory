@@ -19,19 +19,21 @@ url=
 <?php echo "http://alexhaussmann.com/adhaussmann/inventory/item_page.php?id=".$_GET["item_id"].""; ?>
 </br>
 </br>
+
+</br>
+</br>
+
+<?php echo $_GET["item_id"]; ?>
+
 <div id="qrcode"></div>
 
-<!-- (C) CREATE QR CODE ON PAGE LOAD 
-item2
--->
+
 <script>
 	window.addEventListener("load", function(){
 	  var qrc = new QRCode(document.getElementById("qrcode"), <?php echo "\"http://alexhaussmann.com/adhaussmann/inventory/item_page.php?id=".$_GET["item_id"]."\""; ?> );
 	});
 
 </script>
-
-
 
 
 
